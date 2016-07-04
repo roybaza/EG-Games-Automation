@@ -1,7 +1,11 @@
 package games;
-import javax.xml.parsers.*;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
-import org.w3c.dom.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 /**
  * Created by royba on 14/06/2016.
@@ -152,13 +156,9 @@ public class parsing {
         return MgpgamesUrl;
     }
 
-    public int NgmgamesUrlSize() {
-        return NgmgameParser().length;
-    }
+    public int NgmgamesUrlSize() { return NgmgameParser().length; }
 
-    public int MgpgamesUrlSize() {
-        return MgpgameParser().length;
-    }
+    public int MgpgamesUrlSize() { return MgpgameParser().length; }
 
 
 }

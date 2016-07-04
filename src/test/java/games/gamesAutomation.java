@@ -61,6 +61,7 @@ public class gamesAutomation {
         //------------
 
         //WebDriver driver = new ChromeDriver();
+
         driver.navigate().to("https://mobile.eurogrand.com/");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         WebElement LoginCTA = driver.findElement(By.className("btn_action_login"));
@@ -209,7 +210,7 @@ public class gamesAutomation {
             }
         }
         if(count == 0){
-            Content.sendKeys(pars.NgmgamesUrlSize() + pars.MgpgamesUrlSize() + "Games tests passed successfully \n");
+            Content.sendKeys(pars.NgmgamesUrlSize() + "Games tests passed successfully \n");
         }
 
         WebElement Send = driver.findElement(By.xpath("//div[text()='Send']"));
